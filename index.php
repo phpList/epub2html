@@ -35,6 +35,9 @@ $contents = str_replace('<?xml version="1.0" encoding="UTF-8"?>
     "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"><head><title/>','',$contents);
 
+$contents = str_replace('</head><body>','',$contents);
+$contents = str_replace('</body></html>','',$contents);
+
 $header = str_replace('[TITLE]',$title,$header);
 
 print $header;
