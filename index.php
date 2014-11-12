@@ -65,7 +65,7 @@ function extractMenu($navPoints,$level = 1) {
     $menu .= '</li>';
   }
   $menu .= '</ul>';
-  return $menu."</nav>";
+  return $menu;
 }
 
 
