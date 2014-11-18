@@ -41,11 +41,12 @@ $contents = str_replace('</body></html>','',$contents);
 $header = str_replace('[TITLE]',$title,$header);
 
 print $header;
-print '<table><tr><td valign="top">';
+print "<nav id='menu' role='navigation'>\n";
 print $toc;
-print '</td><td valign="top">';
+print "</nav>\n";
+print "<div id='content'>\n";
 print $contents;
-print '</td></tr></table>';
+print "</div>\n";
 print $footer;
 
 function extractMenu($navPoints,$level = 1) {
@@ -64,7 +65,7 @@ function extractMenu($navPoints,$level = 1) {
     $menu .= '</li>';
   }
   $menu .= '</ul>';
-  return $menu;
+  return $menu."</nav>";
 }
 
 
