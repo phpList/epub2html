@@ -2,28 +2,53 @@
 </div><!-- /#wrap -->
 
 <footer id="footer" role="contentinfo">
-<div class="fleft">
-<a class="social" href="https://phplist.com/hosted">
-    <span class="icon hosted"></span><br />
-    Try phpList Hosted - I'ts free!
-</a>
-<a class="social" href="http://community.phplist.com">
-    <span class="icon community"></span><br />
-    Join the community!
-</a>
-</div>
-<div>
-<a class="social" href="http://twitter.com/phplist">
-    <span class="icon tw"></span><br />
-    Follow us on twitter
-</a>
-<a class="social" href="http://facebook.com/phplist">
-    <span class="icon fb"></span><br />
-    Like us on Facebook
-</a>
-</div>
+    <!-- FOOTER SITE 2014 -->
+	<div id="footerframe">
+		<div id="rack-info">
+			<div class="panel_one">
+				<h5>Quick Links</h5>
+				<ul>
+				<li><a href="/spampolicy" title="Anti-spam Policy">Anti-spam Policy</a></li>
+				<li><a href="/terms" title="Terms amp; Conditions">Terms &amp; Conditions</a></li>
+				<li><a href="/privacy" title="Privacy Policy">Privacy Policy</a></li>
+				</ul>
+			</div>			
+			<div class="panel_two">
+				<h5>Resources</h5>
+				<ul>
+				<li><a href="http://forums.phplist.com/" title="Forums (opens in a new window)" target="_blank">Forums</a></li>
+				<li><a href="http://resources.phplist.com/" title="Documentation (opens in a new window)" target="_blank">Documentation</a></li>
+				</ul>
+			</div>
+			<div class="panel_three">
+				<h5>Contact Us</h5>
+				<p>e: <a href="mailto:info@phplist.com" title="info@phplist.com">info@phplist.com</a></p>
+				<ul class="connect">
+				<li class="fb"><a href="http://facebook.com/phplist" title="Facebook (opens in a new window)" target="_blank">Facebook</a></li>
+				<li class="twitter"><a href="http://twitter.com/phplist" title="Twitter (opens in a new window)" target="_blank">Twitter</a></li>
+				<li class="rss"><a href="http://www.phplist.com/rss.php" title="RSS">RSS</a></li>
+				</ul>
+			</div>
+			<div class="panel_four">
+				<h5>Boring Bit</h5>
+				<p>phpList is a registered limited company<br/>UK Company No. 07582966<br/>VAT Registration 122 0788 37</p>
+				<p>© phpList 2001 - <?php echo date('Y')?></p>
+			</div>
+        </div><!--/rack-info-->
+        <div id="rack-sponsors">
+            <h5>Sponsors</h5>
+			<ul>
+			    <a href="http://www.ukdedicated.com/" title="Web vulnerability scanner">Managed Dedicated Servers</a> |
+			    <a href="https://www.HTTPCS.com/" title="Web vulnerability scanner">Web vulnerability scanner</a>
+			</ul>
+		</div>  
+    </div><!--/footerframe-->
+    <!-- /FOOTER SITE 2014 -->
 </footer>
-<script src="https://www.phplist.com/codelib/js/jquery/jquery-1.4.2.min.js"></script>
+<div id="backtotop"><span class="arrow"></span></div>
+
+<script src="https://hosteddev.phplist.com/js/jquery-1.11.1.min.js"></script>
+<script src="https://hosteddev.phplist.com/js/site2015.js"></script>
 <script>
 $(function() {
     var uri =location.pathname.split("/")[2];
@@ -32,6 +57,23 @@ $(function() {
   $('nav ul ul a[href^="' + uri + '"]').parent().parent().parent().addClass('active');
 });
 </script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "*.phplist.com"]);
+  _paq.push(["setDomains", ["*.phplist.com"]]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u=(("https:" == document.location.protocol) ? "https" : "http") + "://phplist.piwikpro.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "2"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Piwik Code -->
 
 </body>
 </html>
