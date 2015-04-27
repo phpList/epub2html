@@ -1,55 +1,58 @@
-</div><!-- /#main -->
-</div><!-- /#wrap -->
+</div><!-- #main-content -->
 
-<footer id="footer" role="contentinfo">
-    <!-- FOOTER SITE 2014 -->
-	<div id="footerframe">
-		<div id="rack-info">
-			<div class="panel_one">
-				<h5>Quick Links</h5>
-				<ul>
-				<li><a href="/spampolicy" title="Anti-spam Policy">Anti-spam Policy</a></li>
-				<li><a href="/terms" title="Terms amp; Conditions">Terms &amp; Conditions</a></li>
-				<li><a href="/privacy" title="Privacy Policy">Privacy Policy</a></li>
-				</ul>
-			</div>			
-			<div class="panel_two">
-				<h5>Resources</h5>
-				<ul>
-				<li><a href="http://forums.phplist.com/" title="Forums (opens in a new window)" target="_blank">Forums</a></li>
-				<li><a href="http://resources.phplist.com/" title="Documentation (opens in a new window)" target="_blank">Documentation</a></li>
-				</ul>
-			</div>
-			<div class="panel_three">
-				<h5>Contact Us</h5>
-				<p>e: <a href="mailto:info@phplist.com" title="info@phplist.com">info@phplist.com</a></p>
-				<ul class="connect">
-				<li class="fb"><a href="http://facebook.com/phplist" title="Facebook (opens in a new window)" target="_blank">Facebook</a></li>
-				<li class="twitter"><a href="http://twitter.com/phplist" title="Twitter (opens in a new window)" target="_blank">Twitter</a></li>
-				<li class="rss"><a href="http://www.phplist.com/rss.php" title="RSS">RSS</a></li>
-				</ul>
-			</div>
-			<div class="panel_four">
-				<h5>Boring Bit</h5>
-				<p>phpList is a registered limited company<br/>UK Company No. 07582966<br/>VAT Registration 122 0788 37</p>
-				<p>© phpList 2001 - <?php echo date('Y')?></p>
-			</div>
-        </div><!--/rack-info-->
-        <div id="rack-sponsors">
-            <h5>Sponsors</h5>
-			<ul>
-			    <a href="http://www.ukdedicated.com/" title="Web vulnerability scanner">Managed Dedicated Servers</a> |
-			    <a href="https://www.HTTPCS.com/" title="Web vulnerability scanner">Web vulnerability scanner</a>
-			</ul>
-		</div>  
-    </div><!--/footerframe-->
-    <!-- /FOOTER SITE 2014 -->
-</footer>
-<div id="backtotop"><span class="arrow"></span></div>
 
-<script src="https://hosteddev.phplist.com/js/jquery-1.11.1.min.js"></script>
-<script src="https://hosteddev.phplist.com/js/site2015.js"></script>
-<script>
+		</div><!-- #main -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+		    <div class='wrap'>
+
+			
+<div id="supplementary">
+	<div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+
+		</div><!-- #footer-sidebar -->
+</div><!-- #supplementary -->
+			    <div id='footer-share'>
+			        <a href="http://twitter.com/phplist" target='_blank' class='ics sm twitter'></a>
+                    <a href="http://www.linkedin.com/company/phplist" target='_blank' class='ics sm linkedin'></a>
+                    <a href="http://youtube.com/phplist" target='_blank' class='ics sm youtube'></a>
+                    <a href="http://facebook.com/phplist" target='_blank' class='ics sm facebook'></a>
+                    <a href="http://plus.google.com/+phplist" target='_blank' class='ics sm google'></a>
+                </div>
+            <div class='copyright'>phpList is a registered limited company - © phpList 2001 - 2015<br />UK Company No. 07582966 - VAT Registration 122 0788 37</div>
+            </div>
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+ <script>
+	jQuery(document).ready(function(){
+        jQuery('#header-buttons li').click(function(){
+            jQuery('#header-buttons li').removeClass('active');
+            jQuery(this).addClass('active'); 
+        });
+        jQuery('#header-buttons li a').mouseover(function(){
+            jQuery('#header-buttons li').removeClass('active');
+        });
+        jQuery('.header-main').mouseleave(function(){
+            jQuery('#header-buttons li').removeClass('active');      
+        });
+
+        jQuery('.info').tooltip({position: {
+            my: "center bottom-20",
+            at: "center top",
+            using: function( position, feedback ) {
+                jQuery( this ).css( position );
+                jQuery( "<div>" )
+                .addClass( "arrow" )
+                .addClass( feedback.vertical )
+                .addClass( feedback.horizontal )
+                .appendTo( this );
+                }
+            }
+        });
+    });
 $(function() {
     var uri =location.pathname.split("/")[2];
   $('nav ul ul a[href^="' + uri + '"]').addClass('active');

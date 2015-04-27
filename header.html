@@ -8,48 +8,42 @@
 <meta name="author" content="phpList" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta property="og:title" content="phpList : Open Source Newsletter Manager" />
-<meta property="og:image" content="https://phplist.com/images/og-coin.jpg" />
+<meta property="og:image" content="http://dev.phplist.org/wp-content/themes/org15/images/og-image.jpg" />
 <meta property="og:description" content="Deliver your message with the power of Open Source : phpList" />
 <title>phpList manual : [title]</title>
-<link rel="shortcut icon" href="https://phplist.com/images/phplist.ico" />
-<link href="https://hosteddev.phplist.com/styles/styles2015.css?v=2014-11-18" rel="stylesheet" />
+<link rel="shortcut icon" href="http://dev.phplist.org/wp-content/themes/org15/images/favicon.ico" />
+<link href="style.css?v=26042015" rel="stylesheet" />
 <!--[if lt IE 9]>
 <script src="https://hosteddev.phplist.com/js/html5.js"></script>
 <![endif]-->
 </head>
 
 <body id="manual">
-<div id="wrap" >
-
-    <header id="header" role="banner">
-    <!-- HEADER SITE 2014 -->
-	    <div id="rack-functions">
-			<h1 id="logo"><a href="/" title="phpList.com"><img src="http://phplist.com/images/logo-gen.png" border="0" width="243" /></a></h1>			
-			<div class="functions">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="http://phplist.org/" rel="home" class='ics logo' title="">phpList.org</a></h1>
+			<ul id='header-buttons' class='inline transition'>
+			    <li id='header-share' class='transition'><a href='javascript:;' class='transition'><span class='ics sm share'></span></a>
+			        <div id="share-container" class='transition'>
+                        <a href="http://twitter.com/phplist" target='_blank' class='ics sm twitter'></a>
+                        <a href="http://www.linkedin.com/company/phplist" target='_blank' class='ics sm linkedin'></a>
+                        <a href="http://youtube.com/phplist" target='_blank' class='ics sm youtube'></a>
+                        <a href="http://facebook.com/phplist" target='_blank' class='ics sm facebook'></a>
+                        <a href="http://plus.google.com/+phplist" target='_blank' class='ics sm google'></a>
+			        </div>
+			    </li>
+            </ul>
+			<nav id="featured-navigation" role="navigation">
 			    <ul>
-			    <?php if ($_SESSION["userloggedin"]) { include dirname(__FILE__).'/loggedin.php';} 
-                                                else { include dirname(__FILE__).'/login_link.php';} 
-                ?>
-                </ul>
-			</div>
+			        <li class='bg-download'><a href='http://phplist.org/download-phplist' class='info' title='download'><span class='ics download transition'></span></a></li>
+			        <li class='bg-hosting'><a href='http://phplist.com' class='info' title='hosting'><span class='ics hosting transition'></span></a></li>
+			        <li class='bg-documentation'><a href='https://discuss.phplist.org' class='info' title='forum'><span class='ics forum transition'></span></a></li>
+			        <li class='bg-community'><a href='http://phplist.org/wp-admin' class='info' title='log-in / join'><span class='ics login transition'></span></a></li>
+			    </ul>
+			</nav>
+
 		</div>
-		<div id="rack-nav">
-			<div id="mainNav">
-			<h2>Main Navigation</h2>
-			<ul>
-			<li><a href="/details" title="Just a few things phpList can do">Features</a></li>
-            <li><a href="/hosted" title="Sign up to get your own installation, no download needed">Hosted</a></li>
-			<li><a href="/download" title="Get the latest version to install on your own server">Download</a></li>
-			<li class="hosted"><a href="http://community.phplist.com/users" title="Get some help with using and setting up phpList">Support</a></li>
-			<li><a href="http://community.phplist.com" title="Join the phpList developers community">Community</a></li>
-			<li><a href="/demo" title="Try it out and see that it does what you are looking for">Demo</a></li>
-			</ul>
-			<div id="socials">
-			    <a href="http://twitter.com/phplist" class="twitter" target="_blank"></a>
-			    <a href="http://facebook.com/phplist" class="fb" target="_blank"></a>
-			</div>
-			</div>
-		</div>
-    <!-- / HEADER SITE 2014 -->
-    </header>
-	<div id="main" role="main">	
+	</header><!-- #masthead -->
+
+	<div id="main" class="site-main">
