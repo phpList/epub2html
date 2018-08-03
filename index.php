@@ -60,7 +60,7 @@ function extractMenu($navPoints,$level = 1) {
     $menu .= '</a>';
     
     if (!empty($navPoint->navPoint)) {
-      $menu .= extractMenu($navPoint->navPoint,$level++);
+      $menu .= extractMenu($navPoint->navPoint,$level+1);
     }
     $menu .= '</li>';
   }
